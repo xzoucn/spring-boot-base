@@ -1,0 +1,16 @@
+# develop configuration
+server:
+  port: 8080
+
+# DataSource Config
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    schema: classpath:db/schema-h2.sql
+    data: classpath:db/data-h2.sql
+    url: jdbc:mysql://127.0.0.1:3306/spring_boot_base
+    username: root
+    password: test
+
+
+
